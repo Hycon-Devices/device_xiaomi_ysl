@@ -28,10 +28,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 $(call inherit-product, device/xiaomi/ysl/device.mk)
 
 # Inherit some common HyconOS stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit some common HyconOS flags
 HYCON_BUILD_TYPE := OFFICIAL
+HYCON_MAINTAINER := DustXyZ
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Device identifier. This must come after all inclusions
